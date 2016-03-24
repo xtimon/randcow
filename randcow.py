@@ -7,7 +7,12 @@ import random
 import subprocess
 import feedparser
 
+# Specify here the directory of your cowfiles (This is default folder for Ubuntu)
+
 cows_path = '/usr/share/cowsay/cows/'
+
+# And here you can specify rss feed which cowsay tells you
+
 rss_feed = 'http://bash.im/rss/'
 
 cows_list = os.listdir(cows_path)
