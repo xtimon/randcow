@@ -7,7 +7,7 @@ import subprocess
 import feedparser
 
 cows_path = '/usr/share/cowsay/cows/'
-rss_feed = 'http://www.anekdot.ru/rss/export20.xml'
+rss_feed = 'http://bash.im/rss/'
 
 cows_list = os.listdir(cows_path)
 feed = feedparser.parse(rss_feed)
