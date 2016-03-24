@@ -13,4 +13,6 @@ cows_list = os.listdir(cows_path)
 feed = feedparser.parse(rss_feed)
 cow = random.choice(cows_list)
 msg = random.choice(feed.entries).description
-subprocess.call("cowsay -f {0} \"{1}\"".format(cow, msg), shell=True)
+if msg[0] == '-':
+    msg = ' ' + msg
+subprocess.call("cowsay -f {0} '{1}'".format(cow, msg), shell=True)
