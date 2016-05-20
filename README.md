@@ -12,12 +12,11 @@ Python 3.4.3
 ```
 Installation is simple:
 ```sh
-$ git clone https://github.com/xtimon/randcow.git {destination_folder}
-$ chmod +x {destination_folder}/randcow.py
+$ git clone https://github.com/xtimon/randcow.git ~/.randcow
 ```
-Then add script in bashrc, so it will be executed everytime you call terminal:
+Then you can add an alias:
 ```sh
-$ echo "~/{destination_folder}/randcow.py" >> ~/.bashrc
+$ echo "alias news='~/.randcow/randcow.py'" >> ~/.bashrc
 ```
 ### Things you should change
 There are two variables you will probably want to change. 
